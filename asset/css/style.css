@@ -275,3 +275,8 @@ textarea {
 .red:hover {
     background-color: #ef5350;
 }
+
+.simpan {
+    background-color: green;
+    margin-right: 20px;
+}

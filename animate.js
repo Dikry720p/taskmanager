@@ -2,7 +2,7 @@
 var myObj= {
     //Select TextArea Func
     textSelect: function(){
-        document.getElementById('description').select();
+        document.getElementById('deskripsi').select();
     },
 
 //Hide form Method
@@ -16,7 +16,7 @@ var myObj= {
 
     document.getElementById("form").style.display = "block";
     document.getElementById("show").style.display = "none";
-    document.getElementById('myDate').valueAsDate = new Date();
+    document.getElementById('tanggal').valueAsDate = new Date();
     },
     //Removing task method
     removeTask: function () {
@@ -41,10 +41,10 @@ function returnToDo(){
 }
 //Class that creates tasks.
 function Task(){
-    this.name = document.getElementById('name').value;
-    this.subject = document.getElementById('subject').value;
-    this.date = document.getElementById('myDate').value;
-    this.describe = document.getElementById('description').value;
+    this.Nama = document.getElementById('Nama').value;
+    this.Judul = document.getElementById('Judul').value;
+    this.date = document.getElementById('tanggal').value;
+    this.describe = document.getElementById('deskripsi').value;
 }
 //Insert task properties into the HTML
 function newTask(x,y,z,o){
@@ -53,7 +53,7 @@ function newTask(x,y,z,o){
         '<p>'+y+'</p>' +
         '<p>By: '+x+'</p>' +
         '<p>Due: ' +o +'</p>'+
-        '<div class="btn red" >Delete</div>'+
+        '<div class="btn red" >Hapus</div>'+
     '</div>'
 }
 //Gets all the objects from the array.
@@ -62,9 +62,9 @@ function showMyTasks(){
     document.getElementById('myTasks').innerHTML = '';
     for(var i=0;i<myTasks.length;i++){
         newTask(
-            myTasks[i].name,
+            myTasks[i].Nama,
             myTasks[i].describe,
-            myTasks[i].subject,
+            myTasks[i].Judul,
             myTasks[i].date
         );
     }

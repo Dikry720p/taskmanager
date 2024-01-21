@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Task Manager</title>
-    <link rel="stylesheet" href="taskmanager/asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
 </head>
 <body>
    <div class="container">
       <h1>Task Manager</h1>
       <hr>	
-      <!-- TASK FORM -->
+      <!-- TUGAS -->
       <section>
           <div class="row">
               <form class="animated fadeIn" id="form">
                   <div class="s12 l12 m12">
-                      <input type="text" id="name" placeholder="Name">
-                      <input type="text" id="subject" placeholder="Subject">
-                      <input type="date" id="myDate">
+                      <input type="text" id="Nama" placeholder="Nama">
+                      <input type="text" id="Judul" placeholder="Judul">
+                      <input type="date" id="tanggal">
                   </div>
                
                   <div class="row">
                       <div class="s10 l10 m10">
-                          <textarea id="description" placeholder="deskripsikan tugasnya" cols="30" rows="10" onClick="myObj.textSelect(this)">Describe Your Task</textarea>
+                          <textarea id="deskripsi" placeholder="Deskripsikan tugasnya" cols="30" rows="10" onClick="myObj.textSelect(this)"></textarea>
                       </div>
                   </div>
                   <div class="col s12 l12 m12">
-                      <div class="btn" onclick="submitInfo()">SUBMIT</div>
+                      <div class="btn simpan" onclick="submitInfo()">Simpan</div>
                       <div class="btn" onclick="myObj.hide()">Sembunyikan</div>
                   </div>
               </form>
@@ -39,7 +39,7 @@
           <!-- Your task list content goes here -->
       </div>
    </div>
-   <script src="taskmanager/asset/js/animate.js"></script>
+   <script src="/animate.js"></script>
    <!-- Include your script for myObj and submitInfo here -->
 </body>
 </html>
