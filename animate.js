@@ -51,9 +51,9 @@ function newTask(x,y,z,o){
     document.getElementById('myTasks').innerHTML +=
         '<div class="col l3 m4 s12 animated zoomIn"> <h4>'+z+  ':</h1>'+
         '<p>'+y+'</p>' +
-        '<p>By: '+x+'</p>' +
-        '<p>Due: ' +o +'</p>'+
-        '<div class="btn red" >Hapus</div>'+
+        '<p> '+x+'</p>' +
+        '<p>Tenggat: ' +o +'</p>'+
+        '<div class="btn red" style="width:200px;" >Hapus</div>'+
     '</div>'
 }
 //Gets all the objects from the array.
