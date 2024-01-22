@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif; /* Choose an appropriate font */
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1; /* Set a background color */
+    color: #333; /* Set text color */
+}
+
+/* Additional styles for links */
+a {
+    color: #3498db; /* Set link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Define a maximum width for the content to improve readability */
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Reset default list styling and add some spacing for better readability */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50; /* Set heading color */
+}
+
+/* Add some spacing around headings */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* Set a default border box model for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Add a subtle box shadow to the body */
+body {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .col {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    input:not([type]),
+    input[type=text],
+    textarea {
+        width: 100%;
+        margin: 0 0 15px 0;
+        padding: 1rem;
+    }
+
+    .btn {
+        margin: 0 0 15px 0;
+    }
+
+    input:not([type]) + label:after,
+    input[type=text] + label:after,
+    textarea + label:after {
+        top: 30px;
+    }
+}
+
+/* Menambahkan efek transisi pada tombol */
+.btn {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #3498db;
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.red:hover {
+    background-color: #c0392b;
+}
+
+.simpan {
+    background-color: #4caf50;
+    margin-right: 20px;
+}
+
+/* Menambahkan efek transisi pada input dan textarea */
+input:not([type]),
+input[type=text],
+textarea {
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:not([type]):focus,
+input[type=text]:focus,
+textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+    
+/* Gaya Task List Item */
+/* Gaya Task List Item */
+.task-item {
+    background-color: #f8f9fa; /* Atur warna latar belakang sesuai keinginan */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 250px; /* Menetapkan lebar maksimal */
+}
+
+/* Responsif Design untuk Task List Item */
+@media only screen and (max-width: 768px) {
+    .task-item {
+        padding: 15px;
+    }
+}
+
+/* Animasi Rotasi dan Warna */
+/* Animasi Fade-In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Mulai dari keadaan tidak terlihat (opacity 0) */
+    }
+    100% {
+        opacity: 1; /* Mencapai keadaan terlihat penuh (opacity 1) */
+    }
+}
+
+/* Gaya Tulisan Task Manager */
+.task-manager-title {
+    animation: fadeIn 2s ease-out; /* Animasi fade-in selama 2 detik dengan efek keluar (ease-out) */
+    font-weight: bold;
+}
+
+/* Responsif Design untuk Task List Item */
+@media only screen and (max-width: 768px) {
+    .task-item {
+        padding: 15px;
+    }
+}
+
+.form-control{
+    background-color: #ecf0f180;
+    border-color: #333;
+}
+
